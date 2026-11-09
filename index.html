@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pocket Studios LLC</title>
+  <meta name="description" content="Pocket Studios LLC is a software development studio that builds applications and games for PC and mobile platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pocket Studios LLC">
+  <meta property="og:description" content="A software development studio for PC and mobile applications and games.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/about" aria-label="Pocket Studios LLC home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="3" y="3" width="26" height="26" rx="7" fill="currentColor"/>
+          <path d="M9 12h14v5a7 7 0 0 1-14 0z" fill="none" stroke="var(--bg)" stroke-width="2.2" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-name">Pocket Studios</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#/about" data-nav="about">About</a>
+        <a href="#/applications" data-nav="applications">Applications</a>
+        <a href="#/contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- About -->
+    <section class="view" data-route="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="hero">
+          <p class="eyebrow">Software Development Studio</p>
+          <h1 id="about-title">Pocket Studios LLC</h1>
+          <p class="lede">Software development for PC and mobile.</p>
+        </div>
+
+        <div class="prose">
+          <p>Pocket Studios LLC is a software development studio that designs and builds applications and games for PC and mobile platforms. We are committed to delivering software that is reliable, intuitive, and carefully crafted. Our team focuses on thoughtful design, solid engineering, and a consistent experience across every platform we support.</p>
+        </div>
+
+        <h2 class="section-title">What We Build</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Applications</h3>
+            <p>We develop practical, well-designed applications for Windows, Linux, Android, and Apple platforms.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 11v3M5.5 12.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="11.5" r="1.1" fill="currentColor"/><circle cx="18" cy="13.5" r="1.1" fill="currentColor"/></svg>
+            <h3>Games</h3>
+            <p>We create engaging games for PC and mobile devices with a focus on quality and polish.</p>
+          </article>
+        </div>
+
+        <a class="button" href="#/applications">View Our Work</a>
+      </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="view" data-route="applications" aria-labelledby="apps-title" hidden>
+      <div class="container">
+        <div class="page-head">
+          <h1 id="apps-title">Applications</h1>
+
+          <div class="filter">
+            <button class="filter-button" type="button" aria-expanded="false" aria-controls="filter-panel">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Filter
+              <span class="filter-count" hidden></span>
+            </button>
+
+            <div id="filter-panel" class="filter-panel" hidden>
+              <fieldset>
+                <legend>Type</legend>
+                <label><input type="checkbox" name="type" value="applications"> Applications</label>
+                <label><input type="checkbox" name="type" value="games"> Games</label>
+              </fieldset>
+              <fieldset>
+                <legend>Platform</legend>
+                <label><input type="checkbox" name="platform" value="windows"> Windows</label>
+                <label><input type="checkbox" name="platform" value="linux"> Linux</label>
+                <label><input type="checkbox" name="platform" value="android"> Android</label>
+                <label><input type="checkbox" name="platform" value="apple"> Apple</label>
+              </fieldset>
+              <button class="filter-clear" type="button">Clear filters</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="split-col" data-col="application">
+            <h2 class="col-title">Applications</h2>
+            <div class="card-list"></div>
+            <p class="empty" hidden></p>
+          </div>
+          <div class="split-divider" aria-hidden="true"></div>
+          <div class="split-col" data-col="game">
+            <h2 class="col-title">Games</h2>
+            <div class="card-list"></div>
+            <p class="empty" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="view" data-route="contact" aria-labelledby="contact-title" hidden>
+      <div class="container">
+        <div class="hero hero-compact">
+          <h1 id="contact-title">Contact Us</h1>
+        </div>
+        <div class="prose">
+          <p>We welcome inquiries regarding our applications, games, and business opportunities. Please reach out using the information below, and a member of our team will respond as soon as possible.</p>
+        </div>
+        <div class="contact-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value" id="contact-email"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Pocket Studios LLC. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="#/about">About</a>
+        <a href="#/applications">Applications</a>
+        <a href="#/contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="data/products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
