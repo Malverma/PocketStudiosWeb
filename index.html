@@ -35,6 +35,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#/about" data-nav="about">About</a>
         <a href="#/applications" data-nav="applications">Applications</a>
+        <a href="#/extensions" data-nav="extensions">Extensions</a>
         <a href="#/contact" data-nav="contact">Contact</a>
       </nav>
     </div>
@@ -51,20 +52,38 @@
         </div>
 
         <div class="prose">
-          <p>Pocket Studios LLC is a software development studio that designs and builds applications and games for PC and mobile platforms. We are committed to delivering software that is reliable, intuitive, and carefully crafted. Our team focuses on thoughtful design, solid engineering, and a consistent experience across every platform we support.</p>
+          <p>Pocket Studios LLC is a software development studio that builds applications and games for PC and mobile platforms. Our goal is to provide software that is efficient and intuitive, built to help people get things done without unnecessary complexity. Our games are crafted to deliver engaging, polished experiences that players can pick up easily and enjoy for the long term.</p>
         </div>
+
+        <h2 class="section-title">Featured Software</h2>
+        <article class="spotlight">
+          <div class="spotlight-head">
+            <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 18h5M8.5 14v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="17" y="7" width="5" height="11" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <div>
+              <h3>Test Bed</h3>
+              <ul class="badges" aria-label="Platforms"><li class="badge">Windows</li><li class="badge">Linux</li><li class="badge">Android</li></ul>
+            </div>
+          </div>
+          <p>A desktop application for viewing and controlling multiple Android phones over Wi-Fi from a single window. Test Bed can wirelessly install software on your phones, use a phone as an extra monitor for your PC, reconnect saved phones automatically when their addresses change, and remotely control other PCs.</p>
+          <a class="button" href="https://github.com/Malverma/Test-Bed" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
 
         <h2 class="section-title">What We Build</h2>
         <div class="feature-grid">
           <article class="feature-card">
             <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             <h3>Applications</h3>
-            <p>We develop practical, well-designed applications for Windows, Linux, Android, and Apple platforms.</p>
+            <p>Efficient, easy-to-use applications for Windows, Linux, Android, and Apple platforms.</p>
           </article>
           <article class="feature-card">
             <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 11v3M5.5 12.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="11.5" r="1.1" fill="currentColor"/><circle cx="18" cy="13.5" r="1.1" fill="currentColor"/></svg>
             <h3>Games</h3>
-            <p>We create engaging games for PC and mobile devices with a focus on quality and polish.</p>
+            <p>Games for PC and mobile devices.</p>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a2 2 0 0 1 4 0v2h4a1 1 0 0 1 1 1v4h-2a2 2 0 0 0 0 4h2v4a1 1 0 0 1-1 1h-4v-2a2 2 0 0 0-4 0v2H6a1 1 0 0 1-1-1v-4h2a2 2 0 0 0 0-4H5V7a1 1 0 0 1 1-1h4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <h3>Extensions</h3>
+            <p>Lightweight browser extensions for Firefox and Chrome.</p>
           </article>
         </div>
 
@@ -119,6 +138,17 @@
       </div>
     </section>
 
+    <!-- Extensions -->
+    <section class="view" data-route="extensions" aria-labelledby="extensions-title" hidden>
+      <div class="container">
+        <div class="page-head">
+          <h1 id="extensions-title">Web Extensions</h1>
+        </div>
+        <div class="card-list card-grid" id="extension-list"></div>
+        <p class="empty" id="extension-empty" hidden>New extensions are coming soon.</p>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="view" data-route="contact" aria-labelledby="contact-title" hidden>
       <div class="container">
@@ -145,6 +175,7 @@
       <nav aria-label="Footer">
         <a href="#/about">About</a>
         <a href="#/applications">Applications</a>
+        <a href="#/extensions">Extensions</a>
         <a href="#/contact">Contact</a>
       </nav>
     </div>

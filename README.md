@@ -14,7 +14,7 @@ Then visit http://localhost:8000.
 
 ## Adding products
 
-Add entries to `window.PRODUCTS` in [`data/products.js`](data/products.js). Each entry needs a `type` of `"application"` or `"game"` and a list of `platforms` (`windows`, `linux`, `android`, `apple`). Thumbnails can go in an `images/` folder.
+Add entries to `window.PRODUCTS` in [`data/products.js`](data/products.js). Each entry needs a `type` of `"application"`, `"game"`, or `"extension"` and a list of `platforms` (`windows`, `linux`, `android`, `apple`; extensions use `firefox`, `chrome`). Extensions appear in the Extensions tab. Thumbnails can go in an `images/` folder.
 
 ## Setting the contact email
 

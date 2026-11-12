@@ -5,8 +5,10 @@
   const CONTACT_EMAIL = "";
 
   const PLATFORMS = { windows: "Windows", linux: "Linux", android: "Android", apple: "Apple" };
+  const BROWSERS = { firefox: "Firefox", chrome: "Chrome" };
+  const BADGE_LABELS = { ...PLATFORMS, ...BROWSERS };
   const TYPES = { applications: "application", games: "game" };
-  const LINK_LABELS = { learnMore: "Learn More", store: "View in Store", download: "Download" };
+  const LINK_LABELS = { learnMore: "Learn More", store: "View in Store", download: "Download", source: "View on GitHub" };
 
   const ROUTES = {
     about: {
@@ -16,6 +18,10 @@
     applications: {
       title: "Applications | Pocket Studios LLC",
       description: "Browse applications and games from Pocket Studios LLC for Windows, Linux, Android, and Apple platforms."
+    },
+    extensions: {
+      title: "Extensions | Pocket Studios LLC",
+      description: "Browse web browser extensions from Pocket Studios LLC for Firefox and Chrome."
     },
     contact: {
       title: "Contact | Pocket Studios LLC",
@@ -59,6 +65,7 @@
       readFilters(params);
       renderProducts();
     }
+    if (route === "extensions") renderExtensions();
 
     window.scrollTo(0, 0);
   }
@@ -190,6 +197,12 @@
     }
   }
 
+  function renderExtensions() {
+    const visible = products.filter((product) => product.type === "extension");
+    $("#extension-list").replaceChildren(...visible.map(buildCard));
+    $("#extension-empty").hidden = visible.length > 0;
+  }
+
   function el(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -216,11 +229,11 @@
     body.append(el("h3", null, product.name));
     if (product.description) body.append(el("p", null, product.description));
 
-    const platforms = (product.platforms || []).filter((p) => p in PLATFORMS);
+    const platforms = (product.platforms || []).filter((p) => p in BADGE_LABELS);
     if (platforms.length) {
       const badges = el("ul", "badges");
       badges.setAttribute("aria-label", "Platforms");
-      platforms.forEach((p) => badges.append(el("li", "badge", PLATFORMS[p])));
+      platforms.forEach((p) => badges.append(el("li", "badge", BADGE_LABELS[p])));
       body.append(badges);
     }
 
