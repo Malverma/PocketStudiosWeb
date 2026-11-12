@@ -210,7 +210,7 @@ Allow visitors to reach Pocket Studios LLC for inquiries, support, or business o
 ## 7. Technical Requirements
 
 - **Stack:** Plain HTML, CSS, and JavaScript with no build step.
-- **Hosting:** GitHub Pages from https://github.com/Malverma/PocketStudiosWeb (`main` branch, repository root).
+- **Hosting:** GitHub Pages from https://github.com/PocketStudiosLLC/Website (`main` branch, repository root).
 - **SEO:** Unique page titles and meta descriptions per tab, Open Graph tags, and a favicon.
 - **Browser support:** Latest two versions of Chrome, Firefox, Safari, and Edge.
 - **Performance target:** Lighthouse score of 90 or higher in Performance, Accessibility, Best Practices, and SEO.

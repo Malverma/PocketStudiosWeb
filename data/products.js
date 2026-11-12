@@ -30,7 +30,7 @@ window.PRODUCTS = [
     description: "View and control multiple Android phones over Wi-Fi from your PC, wirelessly install software, use a phone as an extra monitor, and remotely control other PCs.",
     platforms: ["windows", "linux", "android"],
     image: "",
-    links: { source: "https://github.com/Malverma/Test-Bed" }
+    links: { source: "https://github.com/PocketStudiosLLC/Test-Bed" }
   },
   {
     id: "dimsplay",
@@ -39,7 +39,7 @@ window.PRODUCTS = [
     description: "Dims your screen below the system's minimum brightness with a translucent overlay, for comfortable viewing in the dark.",
     platforms: ["android"],
     image: "",
-    links: { source: "https://github.com/Malverma/Dimsplay" }
+    links: { source: "https://github.com/PocketStudiosLLC/Dimsplay" }
   },
   {
     id: "recolor-firefox",
@@ -48,7 +48,7 @@ window.PRODUCTS = [
     description: "Adds transparency and a customizable background to YouTube and other sites.",
     platforms: ["firefox"],
     image: "",
-    links: { source: "https://github.com/Malverma/Firefox-Recolor" }
+    links: { source: "https://github.com/PocketStudiosLLC/Firefox-Recolor" }
   },
   {
     id: "recolor-chrome",
@@ -57,6 +57,6 @@ window.PRODUCTS = [
     description: "Adds transparency and a customizable background to your browsing experience.",
     platforms: ["chrome"],
     image: "",
-    links: { source: "https://github.com/Malverma/Recolor-for-Chrome" }
+    links: { source: "https://github.com/PocketStudiosLLC/Recolor-for-Chrome" }
   }
 ];
