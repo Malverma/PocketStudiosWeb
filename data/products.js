@@ -42,6 +42,15 @@ window.PRODUCTS = [
     links: { source: "https://github.com/PocketStudiosLLC/Dimsplay" }
   },
   {
+    id: "3d-stacker",
+    name: "3D Stacker",
+    type: "game",
+    description: "An endless 3D stacking game. Move, rotate, and tip each piece into place to build the tallest tower you can.",
+    platforms: ["android"],
+    image: "",
+    links: { source: "https://github.com/PocketStudiosLLC/3D-Stacker" }
+  },
+  {
     id: "recolor-firefox",
     name: "Recolor for Firefox",
     type: "extension",
